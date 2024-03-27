@@ -1,0 +1,350 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+section.home{
+    background: black;
+}
+nav{
+    /* background: red; */
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+nav ul li a.active{
+
+    color: #00ff66;
+}
+nav ul li a:hover{
+color: #00ff66;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .hamburger .line {
+    transition: background 0.3s ease;
+    display: block;
+    width: 25px;
+    border-radius: 10px;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+.container{
+    height: 80vh;
+    width: 100%;
+    /* padding-top: 3rem; */
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.container p.about-chaintech{
+    text-align: center;
+    color: white;
+    padding: 0 25%;
+}
+.container h1 span{
+    background: linear-gradient(to right, #f3e921, #08ff3d);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    letter-spacing: 0;
+}
+.container h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 7vw;
+    letter-spacing: 5px;
+    text-align: center;
+    line-height:1;
+    font-weight: 900;
+}
+.container .btn p{
+    color: black;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.container .btn{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    width: fit-content;
+    gap: 25px;
+    flex-flow: row;
+    border: none;
+    cursor: pointer;
+    
+    border-radius: 50px;
+}
+.services{
+    height: 150vh;
+    padding: 100px 60px;
+    padding-bottom: 50px;
+}
+.services h1.service-heading{
+    margin-left: 2.5em;
+    font-size: 3rem;
+}
+.services .top{
+    display: flex;
+    gap: 170px;
+    justify-content: space-around;
+}
+.services .top .btns{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.services .top .btns .left{
+    cursor: pointer;
+}
+.services .top .btns .right{
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+}
+
+.services .service-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding:20px 100px;
+    flex: 5;
+}
+.services .service-container .element:nth-child(1){
+    background: #dfffed;
+}
+.services .service-container .element:nth-child(2){
+    background: #D9FDFF;
+}
+.services .service-container .element:nth-child(3){
+    background: #FFE6E6;
+}
+.services .service-container .element:nth-child(7){
+    background: #FFE6E6;
+}
+.services .service-container .element:nth-child(4){
+    background: #E0E3FB;
+}
+.services .service-container .element:nth-child(8){
+    background: #E0E3FB;
+}
+.services .service-container .element:nth-child(6){
+    background: #D9FDFF;
+}
+.services .service-container .element:nth-child(5){
+    background: #dfffed;
+}
+.services .service-container .element{
+    border: 3px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+    
+}
+.services .service-container .element .head{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-bottom: 2px solid black;
+}
+.services .service-container .element .head h3{
+    font-size: 1rem;
+}
+.services .service-container .element .head .logo{
+    position: relative;
+}
+.services .service-container .element .head img{
+    height: 25px;
+    
+}
+.services .service-container .element .middle{
+display: flex;
+flex-flow: column;
+align-items: center;
+justify-content: flex-end;
+padding-top: 20px;
+}
+
+.services .service-container .element .middle h1{
+    font-size: 1.4rem;
+    text-align: center;
+}
+.services .service-container .element .middle img{
+    height: 170px;
+    width: 250px;
+}
+.services .service-container .element .bottom{
+    display: flex;
+    border-top: 2px solid black;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.services .service-container .element .bottom button{
+    border: none;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    align-items: center;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    gap: 15px;
+    font-weight: 700;
+}
+.footer{
+    background: #000;
+    height: 30vh;
+    flex-flow: column;
+    gap: 25px;
+    /* padding: 40px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .logo{
+    width: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    
+    
+}
+.footer p{
+    color: grey;
+    text-align: center;
+}
+.footer .logo img{
+    padding: 20px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    nav{
+        position: relative;
+    }
+
+   .hide{
+    display: block;
+   }
+   .nav__link li a{
+    margin-bottom: 15px;
+    font-size: 20px;
+   }
+   .nav__link li{
+    padding: 20px;
+    border-top: 1px solid rgb(31, 31, 31);
+   }
+   .nav__link{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    background: black;
+    width: 100%;
+    text-align: center;
+    padding:0 30px;
+    height: 0;
+    transition: height 0.3s ease;
+    overflow: hidden;
+   }
+   .hamburger{
+    display: block;
+   }
+   .container{
+    height: 75vh;
+    padding: 0 20px;
+    gap: 30px;
+   }
+   .container h1{
+    font-size: 3.4rem;
+   }
+   .container .btn p{
+    font-size: 14px;
+   }
+   .container .btn img{
+    height: 20px;
+   }
+   .container .btn{
+    padding: 10px 10px;
+    gap: 5px;
+   }
+.container p.about-chaintech{
+       font-size: 13px;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    }
+    .services {
+        height: fit-content;
+        padding: 50px 10px; /* Adjust as needed */
+    }
+    .services h1.service-heading{
+        margin: 0;
+        font-size: 2.2rem;
+        padding-left: 20px;
+    }
+    .services .top p{
+        padding-right: 20px;
+    }
+    .services .top{
+        font-size: 13px;
+        padding:0 20px;
+        gap: 5px;
+    
+    }
+    .services .top img.right{
+        padding: 2px;
+    }
+    .services .top img{
+        height: 10px;
+    }
+    .service-container{
+        margin-top: 30px;
+    }
+}

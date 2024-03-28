@@ -149,7 +149,7 @@ nav ul li a{
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    padding:20px 100px;
+    padding:20px 20px;
     flex: 5;
 }
 .services .service-container .element:nth-child(1){
